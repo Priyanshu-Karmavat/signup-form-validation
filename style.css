@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fstyle: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(186, 186, 186);
+    font-family: var(--fstyle);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Left section */
+
+.left_section {
+    width: 420px;
+    height: 550px;
+    padding: 40px;
+    background-image: url(./assets/Register-Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.left_heading {
+    margin-bottom: 20px;
+}
+
+.left_btn {
+    margin-top: 25px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.left_btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left_btn:hover {
+    transform: scale(1.05);
+}
+
+/* Right section */
+
+.right_section {
+    width: 420px;
+    height: 550px;
+    background-color: white;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.right_heading {
+    margin-bottom: 25px;
+}
+
+
+input,
+.Signup-btn {
+    width: 360px;         
+    height: 48px;           
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+
+input {
+    padding: 14px 14px;
+    margin-top: 5px;
+    border: 1px solid #cfcfcf;
+    background-color: #f5f5f5;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a66e8;
+    background-color: #ffffff;
+}
+
+
+/* Error Section */
+
+small {
+    width: 340px;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 18px;
+    color: red;
+}
+
+.passeye {
+    position: relative;
+    width: 360px;
+    margin-top: 5px;
+}
+
+.passeye input {
+    width: 100%;
+    height: 48px;
+    padding: 0 45px 0 14px;
+    margin-top: 0;
+}
+
+.showpass {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+/* Remove Edge default eye icon */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+.Signup-btn {
+    margin-top:5px;
+    border: none;
+    padding:12px;
+    background-color: #1a66e8;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Signup-btn:hover {
+    background-color: #0f52c9;
+}
+
+.right-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signin-text {
+    margin-bottom: 3px;
+}
+
+.image2 {
+    height: 38px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.image2:hover {
+    transform: scale(1.15);
+}

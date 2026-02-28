@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left_section">
+            <h1 class="left_heading">Come join us!</h1>
+            <p>We are excited to have you here. If you <br>
+                haven't already, create an accounts to get <br>
+                access to exclusive offers, rewards, and <br>
+                discounts.
+            </p>
+            <button class="left_btn">
+                Already have an account? <a href="#">Login in</a>
+            </button>
+        </div>
+
+        <form action="" class="right_section">
+            <h2 class="right_heading">Signup</h2>
+
+            <input id="name" type="text" placeholder="Enter your name">
+            <small id="nameErr"></small>
+
+            <input id="email" type="email" placeholder="Enter your email">
+            <small id="emailErr"></small>
+
+            <div class="passeye">
+                <input id="pass" type="password" placeholder="Enter password">
+                <img src="./assets/show.png" class="showpass" onclick="togglePassword(this)" alt="show">
+            </div>
+            <small id="passErr"></small>
+
+            <div class="passeye">
+                <input id="cpass" type="password" placeholder="Confirm password">
+                <img src="./assets/show.png" class="showpass" onclick="toggleCPassword(this)" alt="show">
+            </div>
+            <small id="cpassErr"></small>
+
+            <button class="Signup-btn" type="submit" id="submit">
+                SignUp
+            </button>
+
+            <div class="right-text">
+                <p class="signin-text">or signin with</p>
+                <img class="image2" src="./assets/facebook_icon.png" alt="">
+                <img class="image2" src="./assets/gmail_icon.png" alt="">
+                <img class="image2" src="./assets/linkeln_icon.png" alt="">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
