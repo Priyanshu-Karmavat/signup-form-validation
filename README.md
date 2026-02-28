@@ -18,3 +18,4 @@ live preview : https://priyanshu-karmavat.github.io/signup-form-validation/
 ## Purpose
 
 This project was built to practice form validation and DOM manipulation.# signup-form-validation
+
